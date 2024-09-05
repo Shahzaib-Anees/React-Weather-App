@@ -48,7 +48,7 @@ function App() {
     <>
       <article
         style={{
-          backgroundImage: "url('../public/app-bg-img.gif')",
+          backgroundImage: "url('/public/app-bg-img.gif')",
           backgroundSize: "cover",
           backgroundRepeat: "noRepeat",
         }}
