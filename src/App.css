@@ -39,6 +39,12 @@
     border-bottom: 1px solid #6f6f6f;
 }
 
+#root{
+    background-image:url("/public/app-bg-img.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 @media (min-width : 200px) and (max-width : 650px){
     .form{
         flex-direction: column;

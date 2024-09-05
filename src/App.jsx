@@ -32,10 +32,9 @@ function App() {
           console.log(weatherDataCollection);
         } catch (error) {
           console.log("error===>", error);
-        }finally{
+        } finally {
           document.querySelector("#submit-btn").disabled = false;
-    document.querySelector("#submit-btn").innerText = "Search";
-
+          document.querySelector("#submit-btn").innerText = "Search";
         }
       } else {
         console.log("User Search is empty");
@@ -46,13 +45,7 @@ function App() {
 
   return (
     <>
-      <article
-        style={{
-          backgroundImage: "url('/public/app-bg-img.gif')",
-          backgroundSize: "cover",
-          backgroundRepeat: "noRepeat",
-        }}
-      >
+      <article>
         <article
           className="flex flex-col items-center min-h-[100vh] max-h-[100%] w-full py-10 px-5 g-3"
           style={{
@@ -76,7 +69,8 @@ function App() {
                 ref={userInput}
               />
 
-              <button id="submit-btn"
+              <button
+                id="submit-btn"
                 onClick={getUserInput}
                 className="submit-btn btn btn-active btn-neutral"
               >
@@ -114,7 +108,7 @@ function App() {
                       Feels Like : {item.current.feelslike_c}
                       <sup>o</sup>C
                     </p>
-                    
+
                     <p className="border-style text-[#f1f1f1] text-[18px] text-center font-bold w-[100%] p-1">
                       <span className="text-[28px] px-5 text-[#a625259f]">
                         <i className="fa-solid fa-temperature-low"></i>
@@ -124,11 +118,10 @@ function App() {
                     </p>
                     <p className="border-style text-[#f1f1f1] text-[18px] text-center font-bold w-[100%] p-1">
                       <span className="text-[28px] px-5 ">
-                      <i className="fa-solid fa-wind"></i>
+                        <i className="fa-solid fa-wind"></i>
                       </span>
                       Heat Index : {item.current.wind_kph}kph
                     </p>
-                    
                   </div>
                 </div>
               ))}
