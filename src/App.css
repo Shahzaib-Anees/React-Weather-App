@@ -26,9 +26,36 @@
     transition: scale 0.5s linear;
 }
 
+.weather-card{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 
-@media (min-width : 200px) and (max-width : 400px){
+.card-head-content{
+    width: 100%;
+    border-bottom: 1px solid #6f6f6f;
+}
+
+.border-style{
+    border-bottom: 1px solid #6f6f6f;
+}
+
+@media (min-width : 200px) and (max-width : 650px){
     .form{
         flex-direction: column;
+    }
+
+    .form>input{
+        width: 100%;
+    }
+    .form>Button{
+        width: 100%;
+    }
+
+    .weather-card-container{
+        width: 100%;
+    }
+
+    .weather-card{
+        width: 100%;
     }
 }
